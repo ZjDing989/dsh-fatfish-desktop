@@ -1,0 +1,16 @@
+{
+  "name": "dsh-plugin-fatfish-desktop",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DeepSeek Harness 大肥鱼桌面宠物与任务状态插件",
+  "license": "MIT",
+  "author": "ZjDing989",
+  "repository": {"type": "git", "url": "git+https://github.com/ZjDing989/dsh-fatfish-desktop.git", "directory": "plugin"},
+  "homepage": "https://github.com/ZjDing989/dsh-fatfish-desktop#readme",
+  "bugs": {"url": "https://github.com/ZjDing989/dsh-fatfish-desktop/issues"},
+  "main": "./index.js",
+  "exports": {".": "./index.js", "./client": "./client.js", "./package.json": "./package.json", "./locale/*.json": "./locale/*.json"},
+  "files": ["index.js", "state.js", "server.js", "client.js", "README.md", "LICENSE", "ASSETS.md", "cordis.patch.yml", "native/**", "locale/*.json"],
+  "scripts": {"test": "node --test test/*.test.js"},
+  "dsh": {"bundle": {"patch": "cordis.patch.yml"}, "client": {"platform": "web", "inject": ["@deepseek-ai/dsh-client-ui-workspace"]}}
+}

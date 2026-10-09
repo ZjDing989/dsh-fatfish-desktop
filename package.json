@@ -1,0 +1,14 @@
+{
+  "name": "dsh-fatfish-plugin-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "可安装到 DeepSeek Harness 的大肥鱼桌面宠物插件源码工作区",
+  "repository": {"type": "git", "url": "git+https://github.com/ZjDing989/dsh-fatfish-desktop.git"},
+  "scripts": {
+    "test": "node --test plugin/test/*.test.js",
+    "test:native": "powershell -NoProfile -STA -ExecutionPolicy Bypass -File tools/check-native.ps1",
+    "install:plugin": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/install-plugin.ps1",
+    "pack:plugin": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/pack-plugin.ps1"
+  },
+  "license": "MIT"
+}

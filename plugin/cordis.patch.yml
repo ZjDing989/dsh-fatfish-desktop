@@ -1,0 +1,6 @@
+- insert:
+    - id: fatfish-desktop-pet
+      name: dsh-plugin-fatfish-desktop
+      config:
+        enabled: true
+        desktopPet: true
